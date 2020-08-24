@@ -20,9 +20,9 @@ function createchart(sample) {
         Plotly.newPlot("bar",  barplot, barlayout)
         var bubbleplot = [
             {
-                x: result.otu_ids.slice(0, 10),
-                y: result.sample_values.slice(0, 10),
-                text:result.otu_labels.slice(0, 10),
+                x: result.otu_ids,
+                y: result.sample_values,
+                text:result.otu_labels,
                 mode: "markers",
                 marker: {
                     size: result.sample_values,
